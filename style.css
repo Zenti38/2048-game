@@ -1,0 +1,196 @@
+body {
+  background-image: url(./northern-lights-illuminate-a-snowy-mountain-landscape-with-smallbuildings-am-2560x1440.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.help {
+  margin: 0 auto;
+  width: 380px;
+  height: 120px;
+  border-radius: 20px;
+  background-color: #5e5eff49;
+  border: solid white 1px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.help-p-bigger {
+  font-family: Roboto;
+  color: hsl(0, 23%, 86%);
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+.help-p-smaller {
+  font-family: Roboto;
+  color: lab(77.97% 7.44 2.7);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.info {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 420px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: #5e5eff49;
+  border: solid white 1px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.info-h1 {
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+  font-family: Roboto;
+}
+
+.info-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #5e5eff49;
+  border: 1px solid rgba(0, 170, 255, 0.6);
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.info-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 380px;
+  margin-left: 18px;
+}
+.game {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: #5e5eff49;
+  border: solid white 1px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-top: 25px;
+  padding-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolumny */
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.game-box {
+  border: 1px solid rgba(0, 170, 255, 0.6);
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.25);
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #5e5eff49;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.active {
+  border: 2px solid rgba(0, 170, 255, 1);
+  box-shadow:
+    0 0 10px rgba(0, 170, 255, 0.6),
+    0 0 20px rgba(0, 170, 255, 0.4);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+.game-box {
+  height: 70px;
+  width: 70px;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+
+  color: white;
+
+  background-color: #5e5eff49;
+
+  border: 1px solid rgba(0, 170, 255, 0.6);
+
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.25);
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.15s;
+}
+.number-2 {
+  background-color: hsl(22, 100%, 50%);
+}
+
+.number-4 {
+  background-color: orange;
+}
+
+.number-8 {
+  background-color: red;
+}
+
+.number-16 {
+  background-color: purple;
+}
+.game-over {
+  display: none;
+
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 300px;
+  height: 200px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid white;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+  font-family: Roboto;
+
+  z-index: 100;
+}
+
+.game-over h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.game-over button {
+  width: 150px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  background-color: #5e5eff49;
+
+  border: 1px solid white;
+
+  color: white;
+
+  cursor: pointer;
+}
